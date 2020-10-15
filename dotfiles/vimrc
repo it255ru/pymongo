@@ -1,0 +1,16 @@
+syntax on
+
+" Очистить подсветку при нажатии ESC
+" nnoremap <esc> :noh<return><esc>
+
+" включить отображение номеров строк
+:set number
+
+" выбрать только текст, а не номера строк при копировании
+" se mouse+=a
+
+" tab = 4 пробела
+"set expandtab ts=4 sw=4 ai
+
+" comment color
+hi Comment ctermfg=LightBlue
