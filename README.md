@@ -55,7 +55,28 @@ Not found in:  tracking / a
 Not found in:  tracking / a
 Not found in:  tracking / a
 </pre>
+
+```python
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import pymongo
+
+db_connect = pymongo.MongoClient('localhost', 27017, maxPoolSize=50)
+db = db_connect['auth']
+collection = db['user']
+cursor = db['user']
+x = cursor.find_one({"nm" : "Ivan Ivanov"})
+print x['nm']
+```
+[out]: 
+<pre>
+# /opt/python2.7/bin/python2.7 test.py
+Ivan Ivanov
+</pre>
+
 ---
+
  ## 2. Список задействованных лицензий по пользователям ИОДа**
  
 Пример 1:
