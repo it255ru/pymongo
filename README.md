@@ -44,6 +44,17 @@ for db in db_connect.database_names():
             except:
                 print 'Not found in: ',db,'/',collect
 ```
+[out]: 
+<pre>
+# /opt/python2.7/bin/python2.7 test.py
+Ivan Ivanov  found in:   auth / user
+Not found in:  tracking / a
+Not found in:  tracking / a
+Not found in:  tracking / a
+Not found in:  tracking / a
+Not found in:  tracking / a
+Not found in:  tracking / a
+</pre>
 ---
  ## 2. Список задействованных лицензий по пользователям ИОДа**
  
